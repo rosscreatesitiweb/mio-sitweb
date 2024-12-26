@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Negozio Online</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- Sezione Orario di apertura -->
+    <div id="orario">Orario: 09:00 - 18:00</div>
+
+    <!-- Sfondo del sito -->
+    <div class="sfondo"></div>
+
+    <!-- Descrizione del sito -->
+    <section id="descrizione">
+        <h2>Benvenuti nel nostro negozio online!</h2><p>Vendiamo prodotti elettronici come TV, tablet, iPhone, Android, PC e tanto altro. Siamo un negozio affidabile con spedizioni veloci e sicure.</p>
+        <p>Se non sei soddisfatto del tuo acquisto, hai 14 giorni per restituirlo!</p>
+    </section>
+
+    <!-- Prodotti -->
+    <section id="prodotti">
+        <h2>Prodotti in vendita</h2>
+
+        <div class="prodotto">
+            <img src="assets/iphone12.jpg" alt="iPhone 12">
+            <h3>iPhone 12</h3>
+            <p>€800</p>
+            <button class="aggiungi-carrello" data-nome="iPhone 12" data-prezzo="800">Aggiungi al Carrello</button>
+        </div>
+
+        <div class="prodotto">
+            <img src="assets/samsung-s24.jpg" alt="Samsung Galaxy S24">
+            <h3>Samsung Galaxy S24</h3>
+            <p>€900</p>
+            <button class="aggiungi-carrello" data-nome="Samsung Galaxy S24" data-prezzo="900">Aggiungi al Carrello</button>
+        </div>
+
+        <div class="prodotto">
+            <img src="assets/tv.jpg" alt="TV Samsung">
+            <h3>TV Samsung</h3>
+            <p>€1000</p>
+            <button class="aggiungi-carrello" data-nome="TV Samsung" data-prezzo="1000">Aggiungi al Carrello</button>
+        </div>
+
+        <div class="prodotto"><img src="assets/tablet.jpg" alt="Tablet Lenovo">
+            <h3>Tablet Lenovo</h3>
+            <p>€350</p>
+            <button class="aggiungi-carrello" data-nome="Tablet Lenovo" data-prezzo="350">Aggiungi al Carrello</button>
+        </div>
+    </section>
+
+    <!-- Carrello -->
+    <section id="carrello">
+        <h3>Il tuo carrello</h3>
+        <ul id="carrello-contenuto">
+            <!-- I prodotti aggiunti al carrello verranno visualizzati qui -->
+        </ul>
+        <button id="checkout">Vai al pagamento</button>
+    </section>
+
+    <!-- Modulo di pagamento -->
+    <section id="pagamento" style="display: none;">
+        <h3>Completa il pagamento</h3>
+        <form id="formPagamento">
+            <label for="nome">Nome:</label>
+            <input type="text" id="nome" name="nome" required><br><br>
+
+            <label for="indirizzo">Indirizzo:</label>
+            <input type="text" id="indirizzo" name="indirizzo" required><br><br>
+
+            <label for="carta">Numero Carta di Credito:</label>
+            <input type="text" id="carta" name="carta" required><br><br>
+
+            <button type="submit">Paga ora</button>
+        </form>
+    </section>
+
+    <!-- Sistema di messaggistica -->
+    <section id="messaggistica">
+        <h3>Contattaci</h3><textarea id="messaggio" placeholder="Scrivi il tuo messaggio qui..."></textarea>
+        <button id="invia">Invia messaggio</button>
+    </section>
+
+    <!-- Sistema di valutazione -->
+    <section id="valutazioni">
+        <h3>Valuta il nostro negozio</h3>
+        <button id="valuta">Lascia una valutazione</button>
+    </section>
+
+    <script src="script.js"></script>
+</body>
+</html>
+

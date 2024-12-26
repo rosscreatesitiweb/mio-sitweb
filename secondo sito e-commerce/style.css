@@ -1,0 +1,79 @@
+css
+/* Sfondo del sito */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+}
+
+#orario {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    background-color: rgba(0, 0, 0, 0.6);
+    color: white;
+    padding: 10px;
+    font-size: 1em;
+}
+
+.sfondo {
+    background-image: url('https://via.placeholder.com/1920x1080'); /* Aggiungi il tuo sfondo */
+    background-size: cover;
+    background-position: center;
+    height: 300px;
+}
+
+#descrizione {
+    padding: 20px;
+    text-align: center;
+}
+
+#prodotti {
+    display: flex;
+    justify-content: space-around;
+    padding: 20px;
+    margin-top: 30px;
+}
+
+.prodotto {
+    background-color: white;
+    padding: 20px;
+    text-align: center;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    width: 200px;
+}
+
+.prodotto img {
+    width: 100%;
+    height: auto;
+}button {
+    background-color: #28a745;
+    color: white;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #218838;
+}
+
+#carrello {
+    padding: 20px;
+    background-color: white;
+    margin-top: 30px;
+}
+
+#carrello-contenuto {
+    list-style-type: none;
+    padding: 0;
+}
+
+#messaggistica, #valutazioni {
+    padding: 20px;
+    background-color: white;
+    margin-top: 30px;
+    text-align: center;
+}
